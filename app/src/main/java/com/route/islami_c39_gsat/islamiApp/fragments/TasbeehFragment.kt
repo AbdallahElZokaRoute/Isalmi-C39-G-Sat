@@ -1,29 +1,27 @@
-package com.route.islami_c39_gsat
+package com.route.islami_c39_gsat.islamiApp.fragments
 
 import android.os.Bundle
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.route.islami_c39_gsat.databinding.FragmentHomeBinding
+import com.route.islami_c39_gsat.databinding.FragmentQuranBinding
+import com.route.islami_c39_gsat.databinding.FragmentTasbeehBinding
 
-// class HomeActivity : AppCompatActivity()
-class HomeFragment : Fragment() {
-    lateinit var binding: FragmentHomeBinding
+class TasbeehFragment : Fragment() {
+    lateinit var binding: FragmentTasbeehBinding
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        binding = FragmentHomeBinding.inflate(inflater)
+        binding = FragmentTasbeehBinding.inflate(inflater)
         return binding.root
     }
-    // Screen Sizes
-    // Phones - Tablets - TVs <->  UI/UX -
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Log.e("Tag", "Finished Develop Home Fragment")
+
     }
+
 }
