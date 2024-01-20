@@ -2,6 +2,7 @@ package com.route.islami_c39_gsat
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.route.islami_c39_gsat.databinding.ActivityMainBinding
@@ -39,11 +40,12 @@ class MainActivity : AppCompatActivity() {
         //1-  Create Git Repository
         //         1- Untracked -> ->  red
         //         2- Ignored ->
-        //         3- Tracked
+        //         3- Tracked ->
+
 
         // Commit
         // Initial Commit
-
+        Log.e("Tag", "Main Activity Change")
         binding.homeTab.setOnClickListener {
             // supportFragmentManager
             pushFragment(HomeFragment())
