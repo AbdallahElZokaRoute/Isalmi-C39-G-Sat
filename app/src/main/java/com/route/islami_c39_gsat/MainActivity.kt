@@ -46,6 +46,31 @@ class MainActivity : AppCompatActivity() {
         // Commit
         // Initial Commit
         Log.e("Tag", "Main Activity Change")
+        // Local  -> on Local Device
+        // Remote Repository ->
+        // Github - Gitlab - BitBuket
+        // Developer A -> Changes
+        // Developer B -> Pull
+        // Developer C -> Pull
+
+        // Reinvent the wheel ->
+
+        //1- clone -> copy into your device
+        //2- fork -> copy entire repository into your github account
+
+        // branches -> copy of the code
+        // 3 developers -> project
+        // git initialization
+        // gi
+
+
+
+
+
+
+
+
+
         binding.homeTab.setOnClickListener {
             // supportFragmentManager
             pushFragment(HomeFragment())
