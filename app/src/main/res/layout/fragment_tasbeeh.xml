@@ -1,6 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/islamic_bg"
+    tools:context=".islamiApp.fragments.TasbeehFragment">
+
+
+    <FrameLayout
+        android:id="@+id/islami_fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:id="@+id/head_sbeeh"
+            android:layout_width="73dp"
+            android:layout_height="105dp"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="75dp"
+            android:src="@drawable/head_sbeeh"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/body_sbeeh"
+            android:layout_width="232dp"
+            android:layout_height="234dp"
+            android:layout_marginTop="158dp"
+            android:layout_marginStart="80dp"
+            android:src="@drawable/body_sbeeh"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tasbeehText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="عدد التسبيحات"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:id="@+id/Group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/counterTasbeh"
+                android:layout_width="70dp"
+                android:layout_height="80dp"
+                android:background="@drawable/rectangle_background"
+                android:layout_marginTop="330dp"
+                android:text=""
+                android:textSize="60sp"
+                />
+
+            <Button
+                android:id="@+id/tasbeh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="سبحان الله"
+                android:textSize="25sp"
+                android:textColor="#FFFFFF"/>
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
