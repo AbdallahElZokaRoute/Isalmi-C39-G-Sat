@@ -6,16 +6,13 @@ import androidx.recyclerview.widget.RecyclerView.Adapter
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.route.islami_c39_gsat.databinding.ItemSuraNameBinding
 
-class SuraNameAdapter(
-    var suraItemsList: List<SuraNameIndex>?
-) : Adapter<SuraNameAdapter.SuraNameViewHolder>() {
+class SuraNameAdapter( var suraItemsList: List<SuraNameIndex>?)
+    : Adapter<SuraNameAdapter.SuraNameViewHolder>() {
     var onSuraClickListener: OnSuraClickListener? = null
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SuraNameViewHolder {
         val context = parent.context
         val inflater = LayoutInflater.from(context)
-        val binding = ItemSuraNameBinding.inflate(
-            inflater, parent, false
-        )
+        val binding = ItemSuraNameBinding.inflate(inflater, parent, false)
         return SuraNameViewHolder(binding)
     }
 
