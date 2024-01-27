@@ -3,12 +3,13 @@ package com.route.islami_c39_gsat.islamiApp
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import com.example.islami.Fragments.SebhaFragment
 import com.route.islami_c39_gsat.R
 import com.route.islami_c39_gsat.databinding.ActivityHomeBinding
+import com.route.islami_c39_gsat.databinding.ActivitySebhaaFragmentBinding
 import com.route.islami_c39_gsat.islamiApp.fragments.HadethFragment
 import com.route.islami_c39_gsat.islamiApp.fragments.QuranFragment
 import com.route.islami_c39_gsat.islamiApp.fragments.RadioFragment
-import com.route.islami_c39_gsat.islamiApp.fragments.TasbeehFragment
 
 class HomeActivity : AppCompatActivity() {
     lateinit var binding: ActivityHomeBinding
@@ -32,7 +33,7 @@ class HomeActivity : AppCompatActivity() {
                 }
 
                 R.id.navigation_tasbeeh -> {
-                    pushFragment(TasbeehFragment())
+                    pushFragment(SebhaFragment())
                 }
 
                 R.id.navigation_radio -> {
